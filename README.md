@@ -18,7 +18,22 @@
 
 OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design.
 
-**Contents**: [Key Features](#key-features) | [Installation](#installation) | [Quick Start](#quick-start) | [Python API](#python-api) | [Command-Line Tools](#command-line-tools) | [Training & Evaluation](#training--evaluation) | [Discussion](#discussion--communication) | [Citation](#citation)
+**Contents**: [Fork Highlights](#fork-highlights) | [Key Features](#key-features) | [Installation](#installation) | [Quick Start](#quick-start) | [Python API](#python-api) | [Command-Line Tools](#command-line-tools) | [Training & Evaluation](#training--evaluation) | [Discussion](#discussion--communication) | [Citation](#citation)
+
+## Fork Highlights
+
+This fork keeps upstream OmniVoice behavior and adds practical demo improvements for local production workflows:
+
+- **MP3 output saving in the Gradio demo**: choose `wav` or `mp3` directly in the UI output format selector.
+- **Real-time GPU monitor in the Gradio demo**: live GPU usage panel with utilization history while generation runs.
+
+### Quick Start (this fork)
+
+```bash
+uv run omnivoice-demo --ip 127.0.0.1 --port 8001
+```
+
+Open `http://127.0.0.1:8001/`, run generation, and watch GPU usage update in the output panel.
 
 ## Key Features
 
